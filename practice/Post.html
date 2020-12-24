@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="path/jquery-3.3.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토이프로젝트</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top"> 
+        <div id="navbar">
+            <ul> 
+                <li ><a  href="Home.html">Home</a></li>
+                <li ><a  href="Post.html" class="active">User</a></li>
+                <li ><a  href="About.html">Alcohol</a></li>
+                <li ><a  href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+</head>
+<body>
+    <script src="Funtion.js"></script>
+    <br><h1>유저 관리</h1>
+
+    <div>역할 <input type="text" id="roll"></div><br>
+    <div>이름 <input type="text" id="name"></div><br>
+    <div>나이 <input type="text" id="age"></div><br>
+    <div>성별 <input type="text" id="gender"></div><br>
+    <div>주소 <input type="text" id="address"></div><br>
+    <div><input type="submit" onclick="
+        tableSetting()" id="button"></div>
+
+   
+
+    <br><br><br><br>
+    <table id="table"> 
+        <thead id="table-header">
+            <tr>
+               <th>역할</th> <th>이름</th> <th>나이</th> <th>성별</th> <th>주소</th>
+            </tr>
+        </thead>
+
+        <tbody id="table-body">
+            
+        </tbody>
+    </table>
+
+</body>
+</html>
